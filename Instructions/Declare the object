@@ -1,0 +1,14 @@
+To initialize the object in your project you need to import the class module clsTimeAsString.
+
+Then in your procedure, declare the object using early binding:
+
+Dim objVariable As New clsTimeAsString
+
+NOTE: You must use early binding as shown above.
+
+REGULAR EXPRESSIONS: You must have regular expressions turned on in your project workbook. After saving your workbook as an *.xlsm file:
+
+1. Go to VBA editor (Alt + F11)
+2. Go to Tools -> References
+3. Put a checkmark beside Microsoft VBScript Regular Expressions 5.5" or higher.
+4. Click OK and Save your workbook again.
