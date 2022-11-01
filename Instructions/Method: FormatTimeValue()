@@ -1,0 +1,64 @@
+ovjVar.FormatTimeValue("[input time]")
+
+The input format is independant of the output format. You do not have to declare an input format.
+The class module will recognize most input formats and convert them on its own. I wrote it this
+way because of one of the principal problems I had was users inputting things inconsistently.
+
+Here is a summary of how the input formatting will work. Note that internally, all times are handled
+in the 24-Hour format before being output in your selected format. That is why all these are being
+converted to 24-Hour format.
+
+- Single digit, (eg, 5) -> 0500
+- Two digits < 24 (eg, 08) -> 0800
+- Two digits >= 24 (eg 35) -> 0035
+- Three digits (eg 135) -> 0135
+- Colon, two digits (eg, :10) -> 0010
+- Two digits, colon (eg, 08:) -> 0800
+- One digit, colon, two digits (eg, 8:45) -> 0845
+- Two digits, colon, one digit under 6 (eg, 12:5) -> 1250
+- Four digits (eg, 1345) -> 1345
+- Two digits, colon, two digits (eg, 05:30) -> 0530
+- Two digits, colon, two digits, space, A or AM (eg, 10:00 A) -> 1000
+- Two digits, colon, two digits, space, P or PM (eg, 10:00 P) -> 2200
+
+PUNCTUATION
+When the module is taking an input time value, the designation above for a colon can actually
+be any non-digit character. It could be a colon, a semi-colon, a period,  the letter "h",
+the letter "H", or any other non-digit character. The only thing it won't recognize in that
+position is non-printing characters (space, tab, etc.).
+
+AMPM
+If you are going to input AM or PM with your time, I've created this to be forgiving.
+
+Your output AMPM will always be the time, followed by a single space, followed by a single letter.
+eg, 07:15 A, 04:00 P
+
+The input, however, is easier. Any of the following AM/PM will be accepted and correctly parsed by
+the class module:
+
+- 07:00 A
+- 07:00 AM
+- 07:00A
+- 07:00AM
+- 07:00 P
+- 07:00 PM
+- 07:00P
+- 07:00PM
+- 7:00 A
+- 7:00 AM
+- 7:00A
+- 7:00AM
+- 7:00 P
+- 7:00 PM
+- 7:00P
+- 7:00PM
+
+
+24-HOUR OVERRIDE
+Regardless of what type of output you have selected, you can always get the 24-Hour format by
+overriding the procedure call by adding a boolean True as a second argument
+
+objVar.FormatTimeField(strUserInput, True)
+
+
+
