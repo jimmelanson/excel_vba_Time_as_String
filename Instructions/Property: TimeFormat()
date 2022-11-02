@@ -1,16 +1,21 @@
+objVar.TimeFormat = "12|24|French"
+
 After declaring your object, you then have to select the time format you want for output. If you don't
 indicate a format, the default value is 24-hour format.
 
-objVar.TimeFormat = "24"
-objVar.TimeFormat = "12"
-objVar.TimeFormat = "French"
+The three defined outputs are:
 
-The three native outputs are:
-- 24-Hour (military time: 2330)
-- 12-Hour (standard time with colon: 11:00)
-- French (This is the 24-Hour format with the hours and minutes separated by a lowercase letter "h" like: 23h30)
+objVar.TimeFormat = "24"
+    »Military time. No seperator. No AM or PM.
+    
+objVar.TimeFormat = "12"
+    »12-Hour format, hours reset to 1 after noon. There is a colon seperator. No AM or PM.
+        
+objVar.TimeFormat = "French"
+    »24-hour format with the letter "h" between the hours and minutes. No AM or PM.
 
 The fourth time format is a combination of the 12-Hour format and the AMPM flag being tured on.
+The AMPM flag is ignored it the objVar.TimeFormat is not set to "12"
 
 eg:
   Dim objVar as New clsTimeAsString
