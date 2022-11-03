@@ -1,0 +1,8 @@
+[Single] = objVar.DifferenceAsSingle([First time value], [Second time value])
+
+Where the AddTimeValue() and SubtractTimeValue() methods give you a new clock time, this method gives you a duration in the VBA format of a single.
+
+Eg,
+
+Debug.Print objVar.DifferenceAsSingle("02:15 P", "09:30 P")
+-> 7.25
