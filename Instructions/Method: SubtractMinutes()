@@ -1,0 +1,5 @@
+[String] = objVar.SubtractMinutes([Starting time], [Integer number of minutes])
+
+This method will subtract minutes from the base time value. If the subtraction of minutes goes below zero, then the hour will be reduced by 1 as well.
+
+Note that the integer minutes must be <= 60.
