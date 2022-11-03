@@ -1,0 +1,12 @@
+[String] = objVar.FromDecimal([Single {decimal}])
+
+NOTE: The precision on this is limited to 2 places.
+
+This method converts a decimal to a time value.
+
+Eg,
+Debug.print objVar.ToDecimal(2.08)
+-> 02:05 A
+
+Debug.Print objVar.ToDecimal(14.08)
+-> 02:05 P
