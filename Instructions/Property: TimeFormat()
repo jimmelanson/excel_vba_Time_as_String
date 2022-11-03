@@ -1,4 +1,4 @@
-objVar.TimeFormat = "12|24|French"
+objVar.TimeFormat = [String]
 
 After declaring your object, you then have to select the time format you want for output. If you don't
 indicate a format, the default value is 24-hour format.
