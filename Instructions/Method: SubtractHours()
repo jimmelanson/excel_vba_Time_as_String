@@ -1,0 +1,5 @@
+[String] = objVar.SubtractHours([Starting time], [Integer number of hours])
+
+This method will subtract hours from the base time value. It will not change the minutes.
+
+Note that the integer hours must be <= 24.
