@@ -1,0 +1,9 @@
+[string] = objVar.SubtractTimeValue([Starting time value], [Time value to subtract])
+
+This method will subtract a time value (duration) from another time value and give the results. Eg,
+
+  Debug.Print varObj.SubtractTimeValue("09:30", "05:15")
+  -> 04:15 P
+
+All times that you submit will be re-formatted to 24-hour format when the class processes them. The output value
+will be determined by objVar.FormatTime() and objVar.AMPM
