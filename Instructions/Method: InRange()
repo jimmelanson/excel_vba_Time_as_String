@@ -1,0 +1,13 @@
+[Boolean] = objVar.InRange([Time to test], [Start time], [End time])
+
+This method will evaluate a string time value to determine if it falls between the start time and end time.
+
+Eg,
+
+Debug.Print objVar.InRange("0915", "0800", "1600")
+-> True
+
+Debug.Print objVar.InRange("02:15 P", "02:30 P", "04:00 P")
+-> False
+
+NOTE: The evaluated time value will return true if it matches the start time. However, it wil return false if it matches the end time. Think about it.
