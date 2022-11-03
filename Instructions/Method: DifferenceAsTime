@@ -1,0 +1,15 @@
+[String] = objVar.DifferenceAsTime([First time value], [Second time value])
+
+Where the AddTimeValue() and SubtractTimeValue() methods give you a new clock time, this method gives you
+a duration as a string formatted hh:mm, regardless of your selected time format.
+
+Eg,
+
+Debug.Print objVar.DifferenceAsSingle("02:05 P", "10:00 P")
+-> 07:55
+
+NOTE: The input is calculated in 24-Hour format. This means that it converts your input value to 24-Hour format
+automatically. If you are using 12-Hour format for your inputs, make sure that you add an AM or PM to your
+input time value.
+
+NOTE: If your input times are identical (24-Hours apart), this method will return this as 00:00.
