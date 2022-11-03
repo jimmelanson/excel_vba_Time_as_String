@@ -1,0 +1,14 @@
+[string] = objVar.AddTimeValue([Starting Time Value], [Time Value to Add])
+
+This method will add a time value to another time value and give the results. Eg,
+
+```
+
+Debug.Print varObj.AddTimeValue("09:30", "05:15")
+-> 02:15 P
+
+```
+
+
+
+Public Function AddTimeValue(ByVal strBaseTime As String, ByVal strAddTime As String) As String
