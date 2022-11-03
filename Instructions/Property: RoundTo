@@ -1,0 +1,7 @@
+objVar.RoundTo = [integer]
+
+The output time from the class will be rounded to the nearest minute value matching the integer argument.
+
+This class was written to be able to round to: 5, 10, 15, 20, and 30.
+
+I'm not sure how well it would work with other values.
