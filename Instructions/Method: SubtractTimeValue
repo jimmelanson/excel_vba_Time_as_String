@@ -1,4 +1,4 @@
-[string] = objVar.SubtractTimeValue([Starting time value], [Time value to subtract])
+[string] = objVar.SubtractTimeValue([Starting time value], [Duration value {hhmm} to subtract])
 
 This method will subtract a time value (duration) from another time value and give the results. Eg,
 
