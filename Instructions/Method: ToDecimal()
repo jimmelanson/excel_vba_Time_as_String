@@ -1,0 +1,12 @@
+[Single] = objVar.ToDecimal([String time value])
+
+This method converts a time value to a decimal. This makes it much easier when you are adding up ranges of times like you would processing work schedules.
+
+The method returns a value as a VBA Single datatype. That is, a decimal.
+
+Eg,
+Debug.print objVar.ToDecimal("02:05 A")
+-> 2.08
+
+Debug.Print objVar.ToDecimal("02:05 P")
+-> 14.08
