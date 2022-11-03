@@ -1,9 +1,9 @@
-[string] = objVar.AddTimeValue([Starting Time Value], [Time Value to Add])
+[string] = objVar.AddTimeValue([Starting Time Value], [Duration value {hhmm} to add])
 
-This method will add a time value to another time value and give the results. Eg,
+This method will add a time value (duration) to another time value and give the results. Eg,
 
   Debug.Print varObj.AddTimeValue("09:30", "05:15")
-  -> 02:15 P
+  -> 02:45 P
 
 All times that you submit will be re-formatted to 24-hour format when the class processes them. The output value
 will be determined by objVar.FormatTime() and objVar.AMPM
