@@ -1,0 +1,5 @@
+[String] = objVar.AddMinutes([Starting time], [Integer number of minutes])
+
+This method will add minutes to the base time value. If the addition of minutes goes above 59, then the hour will be increased by 1 as well.
+
+Note that the integer minutes must be <= 60.
