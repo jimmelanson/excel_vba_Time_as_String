@@ -1,0 +1,5 @@
+[String] = objVar.AddHours([Starting time], [Integer number of hours])
+
+This method will add hours to the base time value. It will not change the minutes.
+
+Note that the integer hours must be <= 24.
