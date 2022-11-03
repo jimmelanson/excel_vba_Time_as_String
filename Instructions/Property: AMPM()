@@ -1,4 +1,4 @@
-objVar.AMPM = True|False
+objVar.AMPM = [Boolean]
 
 This setting will only make a difference if the time format property is set to 12-Hour format. This will
 cause the letter "A" or "P" to be apprended to the time.
