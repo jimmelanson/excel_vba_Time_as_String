@@ -8,4 +8,4 @@ To use this class module, you need to activate regular expressions (RegExp) in t
 
 4. Now click on "OK" and save your project.
 
-NOTE: This activates RegExp for this project workbook only. You need to do this again for any other project you create and in which you use <code>clsTimeAsString</code>.
+NOTE: This activates RegExp for this project workbook only. You need to do this again for any other project you create and in which you use <code>clsTimeAsString.cls</code>.
